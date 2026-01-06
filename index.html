@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audit Log Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Audit Log Dashboard</h1>
+
+<div class="controls">
+  <button onclick="filter('all')">All</button>
+  <button onclick="filter('login')">Login</button>
+  <button onclick="filter('update')">Update</button>
+  <button onclick="filter('delete')">Delete</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Action</th>
+      <th>Time</th>
+    </tr>
+  </thead>
+  <tbody id="logs"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
